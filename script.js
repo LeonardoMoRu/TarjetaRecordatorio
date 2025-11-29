@@ -1,8 +1,8 @@
 // Función para manejar toda la lógica de la página
 function initializeLoveCard() {
     // =========================================================================
-    // 1. CONFIGURACIÓN: CAMBIA ESTA FECHA POR TU FECHA ESPECIAL
-    // Formato: 'YYYY-MM-DDT00:00:00'. Ejemplo: '2023-08-15T00:00:00'
+    // 1. CONFIGURACIÓN:
+    // Formato: 'YYYY-MM-DDT00:00:00'.
     // =========================================================================
     const startDateString = '2023-12-09T19:52:00';
     const startDate = new Date(startDateString);
@@ -22,7 +22,7 @@ function initializeLoveCard() {
         hour: '2-digit', 
         minute: '2-digit' 
     }).format(startDate);
-    startDateText.textContent = `Desde el: ${formattedDate}`;
+    startDateText.textContent = `: ${formattedDate}`;
 
 
     // =========================================================================
@@ -73,11 +73,6 @@ function initializeLoveCard() {
     // =========================================================================
     // 3. FUNCIÓN DE ANIMACIÓN (MENSAJE)
     // =========================================================================
-    /*
-      El tulipán original tenía una animación de 3s y el mensaje aparecía 4.5s después.
-      Mantenemos el mismo retraso para el mensaje, asumiendo que la flor de index2.html
-      comienza a animarse inmediatamente con su propio CSS.
-    */
     setTimeout(() => {
         loveMessage.classList.remove('opacity-0');
         loveMessage.classList.add('opacity-100');

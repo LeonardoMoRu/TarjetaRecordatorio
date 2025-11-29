@@ -186,11 +186,6 @@ body {
     transition: all 0.5s ease-out;
 }
 
-/* NOTA: Las propiedades 'left' de las deadPetals son extremadamente grandes. 
-   Las reescribiremos a valores pequeños para que sean visibles en el centro.
-   Si deseas el comportamiento original (que desaparezcan o salgan de un lugar lejano),
-   deja los valores originales, pero esto podría no tener el efecto deseado al escalarse. 
-   Por ahora, las dejamos cerca para que caigan desde el centro. */
 .deadPetals>div:nth-child(1) {
     left: 280px; /* Ajuste: cerca del centro */
     transform: rotate(-30deg);
@@ -370,5 +365,5 @@ body {
 /* Estilo para la capa exterior (texto) para la transición de opacidad */
 .love-message-layer {
     /* Mantenemos el mismo tiempo de transición original */
-    transition: opacity 2s ease-in 4s; 
+    transition: opacity 1s ease-in 2s; 
 }
